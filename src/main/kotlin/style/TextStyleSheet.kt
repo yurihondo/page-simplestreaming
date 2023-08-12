@@ -1,6 +1,5 @@
 package style
 
-import org.jetbrains.compose.web.css.CSSColorValue
 import org.jetbrains.compose.web.css.Color
 import org.jetbrains.compose.web.css.StyleSheet
 import org.jetbrains.compose.web.css.color
@@ -9,6 +8,15 @@ import org.jetbrains.compose.web.css.fontWeight
 import org.jetbrains.compose.web.css.px
 
 object TextStyleSheet : StyleSheet(AppStyleSheet) {
+    val title by style {
+        fontSize(72.px)
+        color(Color.white)
+        property(
+            "font-family",
+            "Lato, Noto Sans JP, system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-serif",
+        )
+    }
+
     val textWithFont by style {
         color(Color.white)
         property(
@@ -43,6 +51,7 @@ object TextStyleSheet : StyleSheet(AppStyleSheet) {
         )
     }
     val caption by style {
+        color(Color.white)
         fontSize(12.px)
         property(
             "font-family",
