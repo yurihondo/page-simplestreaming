@@ -8,9 +8,8 @@ object AppStyleSheet : StyleSheet() {
         justifyContent(JustifyContent.Normal)
         flexDirection(FlexDirection.Column)
         alignItems(AlignItems.Start)
-        width(100.vw)
+        minWidth(100.vw)
         minHeight(100.vh)
-        background("#1C1C1C")
     }
 
     val icon by style {

@@ -8,6 +8,7 @@ object Container : StyleSheet(AppStyleSheet) {
         display(DisplayStyle.Flex)
         alignItems(AlignItems.Center)
         justifyContent(JustifyContent.Center)
+        backgroundColor(Color("#1C1C1C"))
 
         media(mediaMaxWidth(640.px)) {
             self style {
