@@ -86,7 +86,7 @@ private fun Download() {
         style {
             paddingTop(8.px)
         }
-        href("https://drive.google.com/drive/folders/1evBRHDHKGjONaGTkvvIzZ0b5i4TL83Ki?usp=sharing")
+        href("https://drive.google.com/file/d/1-AHiJ6xp0kraXD1EdF_7iN7eUv_ov-HV/view?usp=drive_link")
         target(ATarget.Blank)
     }) {
         Button(attrs = {
