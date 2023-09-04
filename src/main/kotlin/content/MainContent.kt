@@ -209,7 +209,13 @@ private fun PrivacyPolicy() {
         }) {
             Text("Privacy Policy")
         }
-        Text(", making use of the YouTube™ API. Through this API, necessary information related to the user's YouTube™ account is referenced and used. Stored information is managed appropriately and deleted when no longer needed. Rest assured, developers will not access stored data under any circumstances.")
+        Text(", making use of the YouTube™ API. Through this API, necessary information related to the user's YouTube™ account is referenced and used. Stored information is managed appropriately and deleted when no longer needed. Rest assured, developers will not access stored data under any circumstances. Furthermore, the use of information received from the Google API, including Limited Use requirements, complies with ")
+        A(attrs = {
+            href("https://developers.google.com/terms/api-services-user-data-policy")
+        }) {
+            Text("Google API Services User Data Policy")
+        }
+        Text(".")
     }
 }
 
